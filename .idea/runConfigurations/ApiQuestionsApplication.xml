@@ -1,0 +1,11 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="ApiQuestionsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <module name="API_QUESTIONS" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="com.esiea.API_QUESTIONS.ApiQuestionsApplication" />
+    <option name="VM_PARAMETERS" value="-Dserver.port=4300" />
+    <option name="ALTERNATIVE_JRE_PATH" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
