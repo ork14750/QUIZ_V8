@@ -48,11 +48,9 @@ public class UserServiceImpl implements UserService {
 			while(sc.hasNextLine())
 			{
 				DataUsers = sc.nextLine();
-				//System.out.println(DataUsers);
 				if(DataUsers.charAt(0)!='#'){
 					String[] listTemp=DataUsers.split(";");
 					User user = new User();
-					//System.out.println(listTemp[1]);
 					user.setId(Integer.parseInt(listTemp[0]));
 					user.setUsername(listTemp[1]);
 					user.setPassword(listTemp[2]);
@@ -61,7 +59,6 @@ public class UserServiceImpl implements UserService {
 					user.setPoints(Integer.parseInt(listTemp[4]));
 
 					userRepository.save(user);
-					//System.out.println(listTemp[1]);
 				}
 			}
 			sc.close();     //closes the scanner
@@ -84,7 +81,6 @@ public class UserServiceImpl implements UserService {
 			BufferedWriter bw = new BufferedWriter(fw);
 			PrintWriter out = new PrintWriter(bw))
 		{
-			out.println();
 			out.println(DataUser);
 		} catch (IOException e) {
 			e.printStackTrace();
