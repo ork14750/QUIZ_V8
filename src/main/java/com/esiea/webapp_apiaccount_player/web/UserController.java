@@ -60,5 +60,10 @@ public class  UserController {
         return "welcome";
     }
 
+    @RequestMapping(value = "/questions", method = RequestMethod.GET)
+    public String question() {
+        return "questions";
+    }
+
 
 }

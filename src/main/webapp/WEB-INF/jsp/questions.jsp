@@ -1,10 +1,7 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: z0044m3t
-  Date: 19/12/2020
-  Time: 01:11
-  To change this template use File | Settings | File Templates.
---%>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <c:set var="contextPath" value="${pageContext.request.contextPath}"/>
 <!DOCTYPE html>
@@ -20,7 +17,7 @@
     <legend>Jean-Jules && Olivier</legend>
 
 </fieldset>
-<script src="${contextPath}/resources/js/ranks.js"></script>
+<script src="${contextPath}/resources/js/questionsManagement.js"></script>
 </body>
 <hr>
 <footer class='footerbottom'>
