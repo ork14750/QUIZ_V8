@@ -1,0 +1,12 @@
+body{
+    font-family: arial;
+}
+#test{
+    width: 500px;
+    margin: auto;
+}
+#test_status{
+    width: 500px;
+    margin: auto;
+    align:center;
+}

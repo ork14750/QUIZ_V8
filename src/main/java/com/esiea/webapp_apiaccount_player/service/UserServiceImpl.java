@@ -84,7 +84,7 @@ public class UserServiceImpl implements UserService {
 			BufferedWriter bw = new BufferedWriter(fw);
 			PrintWriter out = new PrintWriter(bw))
 		{
-
+			out.println();
 			out.println(DataUser);
 		} catch (IOException e) {
 			e.printStackTrace();
