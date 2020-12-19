@@ -45,7 +45,6 @@ public class PlayerServiceImpl implements PlayerService {
 			while(sc.hasNextLine())
 			{
 				DataUsers = sc.nextLine();
-				System.out.println(DataUsers);
 				if(DataUsers.charAt(0)!='#'){
 					String[] listTemp=DataUsers.split(";");
 					Player player = new Player();
@@ -54,6 +53,8 @@ public class PlayerServiceImpl implements PlayerService {
 					player.setPoints(Integer.parseInt(listTemp[4]));
 
 					playerRepository.save(player);
+
+
 				}
 			}
 			sc.close();     //closes the scanner

@@ -24,6 +24,7 @@ public class ApiController {
     @CrossOrigin(origins = "http://localhost:4100")
     @GetMapping(value = "/players")
     public Collection<Player> getAllUsers() {
+        playerService.loadDataUsers();
         Collection<Player> players = playerService.getAllUsers();
         return players;
     }
