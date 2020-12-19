@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Collection;
 
-//@CrossOrigin(origins = "http://localhost:4200/players")
+
 @RestController
 @RequestMapping("/")
 public class ApiController {

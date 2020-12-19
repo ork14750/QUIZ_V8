@@ -1,22 +1,3 @@
-/*fetch("http://localhost:4200/players",{
-        method: 'GET',
-        headers:{
-                'Content-Type': 'application/json'
-        }
-
-})
-    .then(res=>{
-        console.log(res);
-        if(res.ok) {
-        console.log("success")
-        }
-        else { console.log("not")
-        }})
-    .then(res=>{
-            return res.json()
-    })
-    .then(data=>console.log(data))
-    .catch(error=>console.error(error))*/
 
 fetch("http://localhost:4200/players")
 

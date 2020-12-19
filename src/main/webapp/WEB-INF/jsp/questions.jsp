@@ -17,12 +17,18 @@
     <legend>Jean-Jules && Olivier</legend>
 
 </fieldset>
+<a href="${contextPath}/welcome">
+    <button> Classement</button>
+</a>
+
+<a href="${contextPath}/questions">
+    <button> Rejouer</button>
+</a>
 <script src="${contextPath}/resources/js/questionsManagement.js"></script>
 </body>
 <hr>
 <footer class='footerbottom'>
 
     <center><div> class='contentfooter'>Copyright &#169; 2020 MWAMBA Jean-Jules and KOUADIO Olivier| <a href='https://www.linkedin.com/feed/'> Contactez-nous !</a> </div></center>
-
 </footer>
 </html>
