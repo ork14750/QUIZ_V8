@@ -1,4 +1,4 @@
-
+var id = "classement";
 fetch("http://localhost:4200/players")
 
     // Converting received data to JSON
@@ -17,13 +17,14 @@ fetch("http://localhost:4200/players")
             });
 
             // Display result
-            sortTable();
-            document.getElementById("classement").innerHTML = li;
+
+            document.getElementById(id).innerHTML = li;
+            sortTable(id);
     });
 
-function sortTable() {
+function sortTable(id) {
     var table, rows, switching, i, x, y, shouldSwitch;
-    table = document.getElementById("classement");
+    table = document.getElementById(id);
     switching = true;
     /*Make a loop that will continue until
     no switching has been done:*/
@@ -38,10 +39,10 @@ function sortTable() {
             shouldSwitch = false;
             /*Get the two elements you want to compare,
             one from current row and one from the next:*/
-            x = rows[i].getElementsByTagName("Score")[0];
-            y = rows[i + 1].getElementsByTagName("Score")[0];
+            x = rows[i].getElementsByTagName("TD")[1];
+            y = rows[i + 1].getElementsByTagName("TD")[1];
             //check if the two rows should switch place:
-            if (Number(x.innerHTML) > Number(y.innerHTML)) {
+            if (Number(x.innerHTML) < Number(y.innerHTML)) {
                 //if so, mark as a switch and break the loop:
                 shouldSwitch = true;
                 break;
